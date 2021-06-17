@@ -1,9 +1,10 @@
 # 说明
 ## 个人小文件存放
+以`img/avatar.jpg`为例  
 <details>
-<summary>github仓库使用方法</summary>
+<summary>使用方法</summary>
   
-以`img/avatar.jpg`为例
+1. github
 - 国内
   ```
   https://cdn.jsdelivr.net/gh/wsj0051/files/pics@main/img/avatar.jpg  
@@ -16,4 +17,6 @@
   ```
   https://ghproxy.com/https://raw.githubusercontent.com/wsj0051/files/pics/main/img/avatar.jpg
   ```
+2. gitee
+[avatar](https://gitee.com/wsj0051/files/raw/main/pics/img/avatar.jpg)
 </details>
