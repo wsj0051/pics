@@ -1,7 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
+termux-setup-storage
 name="wsj0051"
 mail="wsj0051@163.com"
-echo "开始自定义安装..."
+
+echo "开始更新源。。"
+termux-setup-storage
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list
 sed -i 's@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@' $PREFIX/etc/apt/sources.list.d/game.list
 sed -i 's@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@' $PREFIX/etc/apt/sources.list.d/science.list
@@ -21,4 +24,9 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 pkg install openssh
 ssh-keygen -t rsa -C $mail
 npm install -g http-server
+
+#pkg i -y wget && bash -c "$(wget -qO- 'https://raw.fastgit.org/wsj0051/files/main/sh/termux_custom.sh')"
+if [ ! -f "~/storage/downloads/id_rsa" ]&&[ ! -f "~/storage/downloads/id_rsa.pub" ];then
+	cp ~/storage/downloads/id_rsa ~/storage/downloads/id_rsa.pub  ~/.ssh/
+fi
 echo "完成自定义安装，请重新启动"
