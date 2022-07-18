@@ -10,6 +10,6 @@
   ```
 - gitee
   ```
-  https://gitee.com/wsj0051/files/raw/main/img/avatar.jpg)
+  https://gitee.com/wsj0051/files/raw/main/img/avatar.jpg
   ```
 </details>
