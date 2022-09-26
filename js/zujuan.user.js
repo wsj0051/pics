@@ -2,9 +2,9 @@
 // @name         组卷助手
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
-// @match        https://zujuan.xkw.com/zujuan/
+// @description  增加免费下载按钮
+// @author       wsj0051
+// @match        https://zujuan.xkw.com/zujuan/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=xkw.com
 // @grant        none
 // ==/UserScript==
