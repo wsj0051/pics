@@ -7,6 +7,7 @@
 - github
   ```
   https://cdn.jsdelivr.net/gh/wsj0051/files@main/img/avatar.jpg
+  https://jsd.cdn.zzko.cn/gh/wsj0051/files@main/img/avatar.jpeg
   ```
 - gitee
   ```
